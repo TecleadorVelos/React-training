@@ -1,0 +1,32 @@
+.selector-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.selector-container .switch {
+    background: linear-gradient(to right,white,grey);
+    width:4rem;
+    height:1.5rem;
+    border-radius: 1rem;
+    cursor:pointer;
+    display:flex;
+    align-items: center;
+    outline: black 1px solid;
+
+
+}
+.selector-container .switch .slider{
+    width:1.5rem;
+    height:1.5rem;
+    border-radius:1.5rem;
+    background:rgb(0, 0, 0);
+    transition: 0.5s;
+
+}
+.selector-container svg {
+    height:1.5rem;
+    width:auto;
+}
+.check-switch:checked + .slider {
+    transform:translateX(2.5rem);
+}
